@@ -3,3 +3,93 @@ html{
   font-family: Helvetica, sans-serif;
   font-size: 18px;
 }
+body{
+  line-height: 1.4rem;
+}
+.flex{
+  display: flex;
+}
+.container{
+  max-width: 960px;
+  margin: auto;
+}
+
+header{
+  background: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 1rem;
+  height: 30rem;
+}
+header .flex{
+  justify-content: flex-end;
+}
+nav{
+  padding: 1rem 0;
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav img{
+  margin-left: 2rem;
+  margin-right: 1rem;
+  height: 1.5rem;
+}
+nav div{
+  display: flex;
+  align-items: center;
+}
+ul{
+  margin-right: 2rem;
+}
+ul li{
+  display: inline;
+  padding: 0 1rem;
+}
+.truncated-menu{
+  display: none;
+}
+.main-banner {
+  background-color: white;
+  padding: 0.75rem 5rem;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 2.4rem;
+}
+h1{
+  font-size: 2rem;
+  margin: .67em 0;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-banner{
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  .main-banner h1{
+    font-size: 1.33rem;
+  }
+  header{
+    padding-top: 0;
+    height: 22rem;
+  }
+  nav.container{
+    max-width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 700px){
+  .menu{
+    display: none;
+  }
+  .menu ul.truncated-menu {
+    display: block;
+  }
+}
