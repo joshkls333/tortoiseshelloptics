@@ -151,3 +151,19 @@ h1{
     font-size: .77rem;
   }
 }
+
+.info{
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+.title{
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+}
+.info p{
+  padding: 1rem 0;
+}
