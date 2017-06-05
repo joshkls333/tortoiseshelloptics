@@ -87,11 +87,30 @@ h1{
 }
 
 @media only screen and (max-width: 700px){
-  .menu{
+  .menu ul{
     display: none;
   }
   .menu ul.truncated-menu {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  header div span{
+    display: none;
+  }
+  header{
+    background-position: 20%;
+    height: 17rem;
+  }
+  .main-banner{
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .main-banner h1{
+    font-size: 1rem;
   }
 }
 
