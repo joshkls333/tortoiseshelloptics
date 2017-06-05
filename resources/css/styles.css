@@ -14,6 +14,7 @@ body{
   margin: auto;
 }
 
+
 header{
   background: url("../images/glasses-bg.png");
   background-repeat: no-repeat;
@@ -91,5 +92,43 @@ h1{
   }
   .menu ul.truncated-menu {
     display: block;
+  }
+}
+
+.supporting{
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 560px) {
+  .supporting{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+  }
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+.service img.paper-icon{
+  width: 3.5rem;
+}
+.service img{
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 560px) {
+  .service{
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
   }
 }
